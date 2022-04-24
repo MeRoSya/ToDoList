@@ -36,3 +36,9 @@ jobs:
           tags: |
             ghcr.io/merosya/todo-list/todo-list-server:latest
           push: ${{ github.ref == 'refs/heads/main' }}
+
+    - name: Publish artifacts
+      uses: actions/upload-artifact@v3
+      with:
+          name: docker-compose
+          path: docker-compose.yml

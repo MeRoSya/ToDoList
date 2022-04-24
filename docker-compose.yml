@@ -4,7 +4,7 @@ name: todo-list
 services:
   client:
     build: ./app
-    image: merosya/todo-list:1.0.0
+    image: ghcr.io/merosya/todo-list/todo-list:latest
     ports:
       - "3000:3000"
     networks:
@@ -13,7 +13,7 @@ services:
 
   server:
     build: ./server
-    image: merosya/todo-list-server:1.0.0
+    image: ghcr.io/merosya/todo-list/todo-list-server:latest
     ports:
       - "8080:8080"
     networks:
