@@ -1,6 +1,8 @@
 import React from 'react'
 import ToDo from './ToDo'
 
+import '../css/ToDoList.css'
+
 export default function ToDoList(props) {
     return (
         <ul>
