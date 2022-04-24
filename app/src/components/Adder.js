@@ -1,5 +1,7 @@
 import React, { useRef } from 'react'
 
+import '../css/Adder.css'
+
 export default function Adder(props) {
     const newToDoText = useRef();
 
@@ -11,7 +13,8 @@ export default function Adder(props) {
         <form onSubmit={onSubmit}>
             <input data-testid="ToDoInput"
                 ref={newToDoText}
-                type={'text'} />
+                type={'text'}
+                placeholder="Type the text of new ToDo here" />
             <input type={'submit'}
                 value="Add a todo"
                 data-testid="AddNewToDo"
