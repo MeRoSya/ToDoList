@@ -1,0 +1,20 @@
+name: docker image CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the app Docker image
+      run: docker build ./app --tag todo-list:$(date +%s)
+    - name: Build the server Docker image
+      run: docker build ./server --tag todo-list-server:$(date +%s)

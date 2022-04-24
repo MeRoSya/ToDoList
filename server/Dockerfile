@@ -2,7 +2,7 @@ FROM node
 
 WORKDIR /todo-list-server
 
-COPY package*.json .
+COPY package*.json ./
 
 RUN npm install
 
