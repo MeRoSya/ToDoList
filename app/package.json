@@ -1,7 +1,7 @@
 {
   "name": "todo-list",
   "version": "1.0.0",
-  "proxy": "http://localhost:8080",
+  "proxy": "http://10.0.0.3:8080",
   "author": "MeRoSya",
   "private": true,
   "dependencies": {
