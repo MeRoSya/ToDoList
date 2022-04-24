@@ -1,0 +1,31 @@
+form {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+}
+
+form>input[type=text] {
+    flex: auto;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    box-shadow: -20px -20px -20px black;
+}
+
+form>input[type=text] {
+    outline: none;
+}
+
+form>input[type=submit] {
+    float: right;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #0060df;
+    color: white;
+    cursor: pointer;
+}
